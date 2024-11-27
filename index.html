@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+<head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <title>Nirvana</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" type="image/x-icon" href="img/lop.jpg">
+  
+  <style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+     <!-- Carga FontAwesome desde el CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<style>*,body{forced-color-adjust:auto}</style><link rel="stylesheet" href="styles-6UU35LJU.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-6UU35LJU.css"></noscript></head>
+<body>
+  <app-root></app-root>
+  <app-header></app-header>
+  <app-log></app-log>
+  <app-history></app-history>
+  <app-productosyservicios></app-productosyservicios>
+  <app-galery></app-galery>
+  <app-video></app-video>
+  <app-team></app-team>
+  <app-map></app-map>
+  <app-contacto></app-contacto>
+  <app-footer></app-footer>
+  
+  
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    
+    
+    
+    
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+
+   
+    
+  });
+</script>
+
+<script>
+  function clearForm() {
+    document.querySelector('#full_name').value = '';
+    document.querySelectorAll('[name="gender"]').forEach(radio => radio.checked = false);
+    document.querySelector('#email').value = '';
+    document.querySelector('#phone').value = '';
+    document.querySelector('#comments').value = '';
+    document.querySelector('input[type="checkbox"]').checked = false;
+    M.updateTextFields(); // Actualizar etiquetas para Materialize
+  }
+</script>
+
+
+  <script>
+function toggleLoginPopup() {
+  const popup = document.getElementById('loginPopup');
+  popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+}
+
+function handleGoogleLogin() {
+  // Aquí irá tu lógica de autenticación con Google
+  // Por ejemplo:
+  // googleAuth.signIn().then(function(result) {
+  //   // Manejar el resultado
+  // });
+  
+  // Por ahora solo cerramos el popup
+  toggleLoginPopup();
+}
+
+// Cerrar el popup si se hace clic fuera de él
+window.onclick = function(event) {
+  const popup = document.getElementById('loginPopup');
+  if (event.target.contains(popup) && event.target !== popup) {
+    popup.style.display = 'none';
+  }
+}
+</script>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-2BN4QN7Y.js" type="module"></script></body>
+</html>
